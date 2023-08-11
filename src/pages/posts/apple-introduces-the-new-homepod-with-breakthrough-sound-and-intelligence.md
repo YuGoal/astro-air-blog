@@ -194,6 +194,7 @@ object RomUtils {
 ## 使用场景
 
 ```kotlin
+//BarUtils.getNavBarHeight()或取手机底部导航栏高度。
 if (NavigationUtils.hasNavigationBar(this@JsBridgeWebViewActivity)){
                 val layoutParams = mViewBinding.jsBridgeWebView.layoutParams as ViewGroup.MarginLayoutParams
                 layoutParams.bottomMargin = BarUtils.getNavBarHeight()
@@ -201,4 +202,3 @@ if (NavigationUtils.hasNavigationBar(this@JsBridgeWebViewActivity)){
 }
 ```
 
-BarUtils.getNavBarHeight()或取手机底部导航栏高度。
