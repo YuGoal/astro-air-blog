@@ -23,7 +23,8 @@ keywords: key1, key2, key3
 
 ## 适配工具类
 
-```import android.app.Service
+```kotlin
+import android.app.Service
 import android.content.Context
 import android.os.Build
 import android.provider.Settings
@@ -125,7 +126,8 @@ object NavigationUtils {
 
 ## 工具类RomUtils
 
-```object RomUtils {
+```kotlin
+object RomUtils {
     private const val TAG = "RomUtils--->"
 
     /**
@@ -191,7 +193,8 @@ object NavigationUtils {
 
 ## 使用场景
 
-```if (NavigationUtils.hasNavigationBar(this@JsBridgeWebViewActivity)){
+```kotlin
+if (NavigationUtils.hasNavigationBar(this@JsBridgeWebViewActivity)){
                 val layoutParams = mViewBinding.jsBridgeWebView.layoutParams as ViewGroup.MarginLayoutParams
                 layoutParams.bottomMargin = BarUtils.getNavBarHeight()
                 mViewBinding.jsBridgeWebView.layoutParams = layoutParams
